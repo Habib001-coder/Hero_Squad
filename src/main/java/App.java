@@ -13,7 +13,7 @@ public class App {
         setPort(port);
         staticFileLocation("/public");
         String layout = "templates/layout.vtl";
-
+ksdjkdsgit
         get("/", (request, response) -> {
             model.put("template", "templates/home.vtl" );
             return new ModelAndView(model, layout);
