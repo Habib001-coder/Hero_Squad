@@ -15,6 +15,17 @@ public class App {
         String layout = "templates/layout.vtl";
 
         get("/", (request, response) -> {
+            model.put("template", "templates/home.vtl" );
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        get("/squadform", (request, response) -> {
+
+            model.put("template", "templates/squadform.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        get("/squad", (request, response) -> {
 
 
         }
