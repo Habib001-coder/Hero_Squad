@@ -44,7 +44,27 @@ public class App {
         }, new VelocityTemplateEngine());
 
         get("/hero", (request, response) -> {
+            String heroname = request.queryParams("heroname");
+            String whichsquad = request.queryParams("whichsquad");
+            String heropower = request.queryParams("heropower");
+            String heroweakness = request.queryParams("heroweakness");
+            String heroage = request.queryParams("heroage");
+            model.put("heroname", heroname);
+            model.put("whichsquad", whichsquad);
+            model.put("heropower", heropower);
+            model.put("heroweakness", heroweakness);
+            model.put("heroage", heroage);
+            model.put("template", "templates/hero.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
 
+        get("/herolist", (request, response) -> {
+
+            model.put("template", "templates/listhero.vtl" );
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+    }
+}
         }
 
 }
