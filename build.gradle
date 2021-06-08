@@ -3,8 +3,8 @@ apply plugin: 'application'
 
 group 'com.sparkjava'
 version '1.0-SNAPSHOT'
-applicationName = 'habhero'
-archivesBaseName = " habhero"
+applicationName = 'abdallahapp'
+archivesBaseName = " abdallahapp"
 mainClassName = 'App'
 sourceCompatibility = 1.8
 
@@ -20,7 +20,7 @@ dependencies {
 
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'org.slf4j:slf4j-simple:1.7.21'
+
 }
 
 

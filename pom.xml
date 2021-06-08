@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.Hero-squad.app</groupId>
-    <artifactId>habhero</artifactId>
+    <artifactId>abdallahapp</artifactId>
     <version>1.0</version>
 
     <dependencies>
@@ -22,7 +22,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.velocity</groupId>
+            <groupId>com.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>2.5.5</version>
         </dependency>
@@ -77,9 +77,9 @@
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
                     <!-- Change this to YOUR application name! -->
-                    <appName>habhero</appName>
+                    <appName>abdallahapp</appName>
                     <processTypes>
-                        <web>java -jar target/habhero-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/abdallahapp-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
