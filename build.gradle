@@ -1,25 +1,42 @@
+//apply plugin: 'java'
+//apply plugin: 'application'
+//
+//archivesBaseName = "Hero_Squad"
+//version = '1.0'
+//applicationName = "abdallahapp"
+//mainClassName = "App"
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//dependencies {
+//    implementation group: 'junit', name: 'junit', version: '4.12'
+//    implementation group: 'com.sparkjava', name: 'spark-core', version: '2.5.5'
+////    Imported velocity Template Plugin!!
+//    compile 'com.sparkjava:spark-template-velocity:2.5.5'
+//    compile 'com.sparkjava:spark-core:2.6.0'
+////    implementation "com.sparkjava:spark-template-handlebars:2.5.5"
+//    compile 'org.slf4j:slf4j-simple:1.7.21'
+//
+//}
+//
+//defaultTasks = ['clean']
+//task stage(dependsOn: ['clean', 'installApp'])
 apply plugin: 'java'
 apply plugin: 'application'
-
-archivesBaseName = "abdallahapp"
+archivesBaseName = "Hero_Squad"
 version = '1.0'
 applicationName = "abdallahapp"
 mainClassName = "App"
-
 repositories {
     mavenCentral()
 }
-
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group: 'com.sparkjava', name: 'spark-core', version: '2.5.5'
-//    Imported velocity Template Plugin!!
-    compile 'com.sparkjava:spark-template-velocity:2.5.5'
-    compile 'com.sparkjava:spark-core:2.6.0'
-//    implementation "com.sparkjava:spark-template-handlebars:2.5.5"
-    compile 'org.slf4j:slf4j-simple:1.7.21'
-
+    implementation group: 'com.sparkjava', name: 'spark-core', version: '2.5.5'
+    implementation 'com.sparkjava:spark-template-velocity:2.5.5'
+    implementation 'org.slf4j:slf4j-simple:1.7.21'
+    testImplementation group: 'junit', name: 'junit', version: '4.+'
 }
-
 defaultTasks = ['clean']
 task stage(dependsOn: ['clean', 'installApp'])
