@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany.app</groupId>
-    <artifactId>Hero-Squad</artifactId>
+    <artifactId>abdallahapp</artifactId>
     <version>1.0</version>
 
     <dependencies>
@@ -80,9 +80,9 @@
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
                     <!-- Change this to YOUR application name! -->
-                    <appName>Hero-Squad</appName>
+                    <appName>abdallahapp</appName>
                     <processTypes>
-                        <web>java -jar target/Hero-Squad-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/abdallahapp-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
