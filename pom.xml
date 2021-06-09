@@ -4,28 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.Hero-squad.app</groupId>
+    <groupId>com.mycompany.app</groupId>
     <artifactId>Hero-Squad</artifactId>
     <version>1.0</version>
-
 
     <dependencies>
         <!-- We need to list out ALL dependencies our project needs. If you have dependencies not listed here, but sure to add them -->
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
-            <version>2.5.5</version>
+            <version>2.2</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.1.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.apache.velocity</groupId>
+            <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
-            <version>2.5.5</version>
+            <version>1.7</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -74,7 +67,7 @@
             <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
-                <version>3.1.4</version>
+                <version>0.4.4</version>
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
                     <!-- Change this to YOUR application name! -->
